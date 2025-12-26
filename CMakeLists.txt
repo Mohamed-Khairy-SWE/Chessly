@@ -21,6 +21,9 @@ add_executable(Chessly
     src/ChessBoard.h
     src/ChessBoard.cpp
 
+    src/GameLogic.h
+    src/GameLogic.cpp
+
     resources.qrc
 )
 

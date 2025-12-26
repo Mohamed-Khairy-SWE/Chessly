@@ -6,12 +6,12 @@
     <file>src/assets/BlackKnight.png</file>
     <file>src/assets/BlackPawn.png</file>
     <file>src/assets/BlackQueen.png</file>
-    <file>src/assets/BlackRock.png</file>
+    <file>src/assets/BlackRook.png</file>
     <file>src/assets/WhiteBishop.png</file>
     <file>src/assets/WhiteKing.png</file>
     <file>src/assets/WhiteKnight.png</file>
     <file>src/assets/WhitePawn.png</file>
     <file>src/assets/WhiteQueen.png</file>
-    <file>src/assets/WhiteRock.png</file>
+    <file>src/assets/WhiteRook.png</file>
 </qresource>
 </RCC>
