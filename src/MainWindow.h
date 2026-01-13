@@ -1,18 +1,12 @@
-#pragma once 
+#pragma once
 
 #include <QMainWindow>
-#include "ChessBoard.h"
 
-
-class MainWindow : public QMainWindow {
+class MainWindow : public QMainWindow{
     Q_OBJECT
-
 public:
 
-    explicit MainWindow(QWidget* parent = nullptr);
-    ~MainWindow() override = default;
+    MainWindow(QWidget* parent = nullptr);
 
-private:
-    ChessBoard* m_board;
-    QWidget* m_sidebar;
+    ~MainWindow() override = default;
 };
