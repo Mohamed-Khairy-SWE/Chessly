@@ -17,6 +17,9 @@ add_executable(Chessly
         
         src/MainWindow.h
         src/MainWindow.cpp
+
+        src/GameLogic.h
+        src/GameLogic.cpp
 )
 
 target_link_libraries(Chessly PRIVATE Qt6::Widgets)
