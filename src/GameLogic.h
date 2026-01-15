@@ -43,12 +43,12 @@ public:
     void resetBoard();
 
     //board state
-    Piece getPiece(Pos& pos)const;
+    Piece getPiece(Pos pos)const;
     PieceColor currentTurn()const{return m_turn;}
 
     //Logic
-    bool isLegalMove(Pos& from , Pos& to)const;
-    bool movePiece(Pos& from , Pos& to);
+    bool isLegalMove(Pos from , Pos to)const;
+    bool movePiece(Pos from , Pos to);
 
 
 
@@ -56,7 +56,8 @@ private:
     Board m_board;
     PieceColor m_turn;
 
-    static constexpr bool isVaild(Pos& pos){
-        return pos.row >= 0 && pos.row < boardSize 
-            && pos.col >= 0 && pos.col < boardSize; }
+    static constexpr bool isValid(Pos pos){
+        return pos.row >= 0 && pos.row < boardSize
+             && pos.col >= 0 && pos.col < boardSize;
+    } 
 };
