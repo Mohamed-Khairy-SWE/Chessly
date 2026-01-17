@@ -27,6 +27,18 @@ add_executable(Chessly
         resources.qrc
 )
 
-target_link_libraries(Chessly PRIVATE Qt6::Widgets)
+target_link_libraries(Chessly PRIVATE
+                 Qt6::Widgets
+)
 
-target_include_directories(Chessly PRIVATE src)
+target_include_directories(Chessly PRIVATE
+                         src
+                         ${CMAKE_SOURCE_DIR}/asio-1.36.0/include
+)
+
+target_compile_definitions(Chessly PRIVATE
+                ASIO_STANDALONE
+)
+
+find_package(Threads REQUIRED)
+target_link_libraries(Chessly PRIVATE Threads::Threads)
