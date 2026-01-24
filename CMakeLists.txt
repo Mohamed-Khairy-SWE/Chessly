@@ -24,6 +24,8 @@ add_executable(Chessly
         src/ChessBoard.h
         src/ChessBoard.cpp
 
+        utils/json.hpp
+
         resources.qrc
 )
 
@@ -33,6 +35,7 @@ target_link_libraries(Chessly PRIVATE
 
 target_include_directories(Chessly PRIVATE
                          src
+                         utils
                          ${CMAKE_SOURCE_DIR}/asio-1.36.0/include
 )
 
