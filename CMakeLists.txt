@@ -14,15 +14,6 @@ find_Package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_executable(Chessly
         src/main.cpp
-        
-        src/MainWindow.h
-        src/MainWindow.cpp
-
-        src/GameLogic.h
-        src/GameLogic.cpp
-
-        src/ChessBoard.h
-        src/ChessBoard.cpp
 
         utils/json.hpp
 
